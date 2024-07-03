@@ -1,0 +1,384 @@
+.markdown-content html {
+    display: block;
+}
+
+.markdown-content :root {
+    view-transition-name: root;
+}
+
+/* generic block-level elements */
+
+.markdown-content body {
+    display: block;
+    margin: 8px;
+}
+
+.markdown-content p {
+    display: block;
+    margin-block-start: 1__qem;
+    margin-block-end: 1__qem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.markdown-content div {
+    display: block
+}
+
+.markdown-content q {
+    display: inline
+}
+
+.markdown-content center {
+    display: block;
+    /* special centering to be able to emulate the html4/netscape behaviour */
+    text-align: -webkit-center
+}
+
+.markdown-content hr {
+    display: block;
+    overflow: hidden;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    border-style: inset;
+    border-width: 1px
+}
+
+/* heading elements */
+
+.markdown-content h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67__qem;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold
+}
+
+.markdown-content h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83__qem;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold
+}
+
+.markdown-content h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1__qem;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold
+}
+
+.markdown-content h4 {
+    display: block;
+    margin-block-start: 1.33__qem;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold
+}
+
+.markdown-content h5 {
+    display: block;
+    font-size: .83em;
+    margin-block-start: 1.67__qem;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold
+}
+
+.markdown-content h6 {
+    display: block;
+    font-size: .67em;
+    margin-block-start: 2.33__qem;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold
+}
+
+/* tables */
+
+.markdown-content table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+    box-sizing: border-box;
+    text-indent: initial
+}
+
+.markdown-content thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit
+}
+
+.markdown-content tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit
+}
+
+.markdown-content tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit
+}
+
+/* for tables without table section elements (can happen with XHTML or dynamically created tables) */
+.markdown-content table > tr {
+    vertical-align: middle;
+}
+
+.markdown-content col {
+    display: table-column
+}
+
+.markdown-content colgroup {
+    display: table-column-group
+}
+
+.markdown-content tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit
+}
+
+.markdown-content td, .markdown-content th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.markdown-content th {
+    font-weight: bold;
+    text-align: -internal-center
+}
+
+.markdown-content caption {
+    display: table-caption;
+    text-align: -webkit-center
+}
+
+/* lists */
+
+.markdown-content ul, .markdown-content menu, .markdown-content dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1__qem;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 40px
+}
+
+.markdown-content ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1__qem;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 40px
+}
+
+.markdown-content li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.markdown-content ul ul, .markdown-content ol ul {
+    list-style-type: circle
+}
+
+.markdown-content ol ol ul, .markdown-content ol ul ul, .markdown-content ul ol ul, .markdown-content ul ul ul {
+    list-style-type: square
+}
+
+.markdown-content dd {
+    display: block;
+    margin-inline-start: 40px
+}
+
+.markdown-content dl {
+    display: block;
+    margin-block-start: 1__qem;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.markdown-content dt {
+    display: block
+}
+
+.markdown-content ol ul, .markdown-content ul ol, .markdown-content ul ul, .markdown-content ol ol {
+    margin-block-start: 0;
+    margin-block-end: 0
+}
+
+/* form elements */
+
+.markdown-content form {
+    display: block;
+    margin-top: 0__qem;
+}
+
+.markdown-content label {
+    cursor: default;
+}
+
+.markdown-content legend {
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border: none
+}
+
+.markdown-content fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    border: 2px groove #C0C0C0;
+    min-inline-size: min-content;
+}
+
+.markdown-content button {
+    appearance: auto;
+}
+
+.markdown-content input, .markdown-content textarea, .markdown-content select, .markdown-content button {
+    margin: 0__qem;
+    font: -webkit-small-control;
+    text-rendering: auto; /* FIXME: Remove when tabs work with optimizeLegibility. */
+    color: FieldText;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+}
+
+.markdown-content textarea {
+  appearance: auto;
+  border: 1px solid light-dark(#767676, #858585);
+  column-count: initial !important;
+  -webkit-rtl-ordering: logical;
+  resize: -internal-textarea-auto;
+  cursor: text;
+  padding: 2px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: Field;
+  font-family: monospace;
+}
+
+.markdown-content button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border: 2px outset ButtonBorder;
+    box-sizing: border-box;
+    background-color: ButtonFace;
+    color: ButtonText;
+}
+
+/* inline elements */
+
+.markdown-content u, .markdown-content ins {
+    text-decoration: underline
+}
+
+.markdown-content abbr[title], .markdown-content acronym[title] {
+    text-decoration: dotted underline;
+}
+
+.markdown-content strong, .markdown-content b {
+    font-weight: bold
+}
+
+.markdown-content i, .markdown-content cite, .markdown-content em, .markdown-content var, .markdown-content address, .markdown-content dfn {
+    font-style: italic
+}
+
+.markdown-content tt, .markdown-content code, .markdown-content kbd, .markdown-content samp {
+    font-family: monospace
+}
+
+.markdown-content pre, .markdown-content xmp, .markdown-content plaintext, .markdown-content listing {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1__qem 0
+}
+
+.markdown-content mark {
+    background-color: Mark;
+    color: MarkText;
+}
+
+.markdown-content big {
+    font-size: larger
+}
+
+.markdown-content small {
+    font-size: smaller
+}
+
+.markdown-content s, .markdown-content strike, .markdown-content del {
+    text-decoration: line-through
+}
+
+.markdown-content sub {
+    vertical-align: sub;
+    font-size: smaller
+}
+
+.markdown-content sup {
+    vertical-align: super;
+    font-size: smaller
+}
+
+.markdown-content nobr {
+    white-space: nowrap
+}
+
+/* states */
+
+.markdown-content :-internal-selector-fragment-anchor {
+    outline: Highlight 3px solid;
+}
+
+.markdown-content :focus-visible {
+    outline: auto 1px -webkit-focus-ring-color
+}
+
+
+
+.markdown-content details {
+    display: block
+}
+
+.markdown-content summary {
+    display: block
+}
